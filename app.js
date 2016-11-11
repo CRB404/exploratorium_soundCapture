@@ -27,7 +27,7 @@ function draw() {
   }
   particle.getVariable({ deviceId: '21001f000747343232363230', name: 'nl', auth: '7dfb755486e5e116bf9a73c6764959c1180c64cf' }).then(function(data) {
     // console.log('Device variable retrieved successfully:', data.body.result);
-    maxSpeeds = data.body.result-930;
+    maxSpeeds = data.body.result-970;
     console.log('Max Speed', maxSpeeds);
   }, function(err) {
     console.log('An error occurred while getting attrs:', err);
